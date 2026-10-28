@@ -57,7 +57,7 @@ public class AutoToolClient implements ClientModInitializer {
 		loadConfig();
 
 		toggleKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-			"key.autotool.toggle", InputConstants.Type.KEYSYM, 79, // 79 = phim O (GLFW_KEY_O)
+			"key.autotool.toggle", InputConstants.Type.KEYBOARD, 79, // 79 = phim O (GLFW_KEY_O)
 			KeyMapping.Category.MISC));
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
