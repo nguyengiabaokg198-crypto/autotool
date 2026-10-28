@@ -30,8 +30,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.EntityHitResult;
 
-import org.lwjgl.glfw.GLFW;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
@@ -59,7 +57,7 @@ public class AutoToolClient implements ClientModInitializer {
 		loadConfig();
 
 		toggleKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-			"key.autotool.toggle", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_O,
+			"key.autotool.toggle", InputConstants.Type.KEYSYM, 79, // 79 = phim O (GLFW_KEY_O)
 			KeyMapping.Category.MISC));
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
