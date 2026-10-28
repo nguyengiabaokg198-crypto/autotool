@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "autotool",
+	"version": "${version}",
+	"name": "AutoTool",
+	"description": "AutoTool: automatically selects the right tool from your hotbar when you hit a block (pickaxe/axe/shovel/hoe) or a mob (sword). Client-side, touch-friendly. Nhan phim O de bat/tat.",
+	"authors": [
+		"hai"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/autotool/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.autotool.client.AutoToolClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
